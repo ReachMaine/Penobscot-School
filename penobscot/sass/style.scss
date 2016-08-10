@@ -1,0 +1,222 @@
+/*
+Theme Name: Penobscott
+Description: Theme for the Penobscot Language School
+Author: Reach Maine
+Template: flatsome
+Version: 2.5.6
+*/
+ 
+@import url("../flatsome/css/foundation.css");
+@import "partials/settings";
+@import "partials/print"; 
+@import "partials/woo";
+ 
+/* =Theme customization starts here */
+#top-bar { // turn off in theme options.
+	
+}
+#masthead {
+	background-color: $masthead-background!important;
+	#logo {
+		a {
+			color: $logo-font-color;
+		}
+		#tag-line {
+			color: $tagline-color;
+		}
+	}
+	.right-links #menu-top-bar-menu {
+		li, li a {
+			color: white;
+			font-size: 110%;
+		}
+	}
+	.mobile-menu .icon-menu {
+		color: $alt-text-color;
+	}
+}
+#site-navigation {
+	li, li a {
+		font-size: 100%;
+		//font-weight: normal;
+		opacity: .8;
+	}
+}
+ul.header-nav a.nav-top-link
+
+// close up space under slidehow on home page
+.block-html-after-header {
+	border-bottom: 10px solid $tagline-color;
+	.ux-slider {
+		margin-bottom: 0px;
+	}
+}
+// space between header & content - seems excessive.
+.block-html-after-header .ux-slider { // bottom of slideshow
+	margin-bottom: 20px;
+}
+.product-page,
+.page-wrapper, 
+.category-page {
+	padding-top: 10px; // was 20px
+}
+
+.page-wrapper {
+	#secondary {
+		padding-top: 5px;
+	}
+	.entry-content  {
+		margin-top: 0px;
+		.tribe-events-before-html h1 {  // make events page look like other pages.
+			margin-top: 0px;
+			text-transform: uppercase;
+			font-size: 1.625em;
+		}
+
+	}
+}
+// change of look of tabs.
+.tabbed-content.shortcode_tabgroup {
+	ul.tabs {
+		border-top: 0px;
+		border-bottom: 2px solid $tab-border;
+		li {
+			border: 1px solid $tab-border;
+			a {
+				padding-left: 10px;
+				color: #868686; // a light green
+				width: 100%;
+			}
+			a:hover {
+				//border:0px;
+			}
+		}
+		li:hover {
+			//border-top: 3px solid #333;
+		}
+		li.active {
+			border-top: 4px solid #333;
+			border-left: 1px solid #808080;
+			border-right: 1px solid #808080;
+			margin-top: 1px;
+			a {
+				color: #333;
+				border: 0px;
+			}
+		}
+	}
+}
+//
+.penobscot_banner_bottom {
+	.ux_banner {
+		.inner.bottom {
+			bottom: 0!important;
+			.inner-wrap {
+				padding-left: 5px!important;
+				padding-right: 0px!important;
+			}
+		}
+	}
+}
+
+h4.penob_h4_smaller {
+	font-size: 20px;
+}
+
+
+.from_the_blog_comments { // hide comments on blog shortcode 
+	display: none;
+	visibility: hidden;
+}
+aside.widget.widget_recent_entries { // give recent entries some breathing room
+	li {
+		padding-bottom: 15px;
+	}
+}
+
+// widgets
+
+.widget-title {
+	color: $title-color;
+}
+
+// our team plugin/ custom post type 
+.widget_woothemes_our_team {
+	.team-member {
+		clear: both;
+		padding-top: 20px;
+		figure {
+			width: 225px!important;
+			padding-right: 10px;
+			float: left;
+			img {
+				border-radius: 0px;
+				width: 100%;
+			}
+		}
+	}
+	.team-member:after {
+		clear: both;
+	}
+}
+aside.bottom_close_menu.widget_nav_menu {
+	margin-bottom: 0px;
+	ul.menu {
+		padding-bottom: 0px;
+	}
+}
+
+
+// testimonitals 
+.easy_testimonial { //blockquote
+	p {
+		margin-bottom: 0px;
+	}
+	p.easy_testimonial_title {
+	}
+	.testimonial_body {
+		font-size: 95%;
+	}
+	p.testimonial_author {
+		cite:before {
+			content: "";
+		}
+		cite {
+			.testimonial-client, 
+			.testimonial-position,
+			.testimonial-other {
+				font-size: medium;
+				padding-left: 10px;
+				color: $title-color;
+			}
+		}
+		
+	}
+
+}
+
+// calendar ecs-event-list shortcode (on what's new page.)
+ul.ecs-event-list {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	li.ecs-event {
+		border: 1px solid #EEE;
+		padding: 1%;
+		margin: 1%;
+		float: left;
+		max-width: 48%;
+	}
+}
+
+//Immersion category below product category
+.event-cat-shortcode .duration {
+	display: block;
+}
+
+#submit.donate-btn { // style copied from 
+	background-color: red;
+	width: 147px;
+	height: 47px;
+}
+@import "partials/media"; // needs to be last in this file.

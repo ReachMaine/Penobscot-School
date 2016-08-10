@@ -1,0 +1,99 @@
+// product in loops
+.product-small {
+	p.name {
+		font-size: x-large;
+		//color: $product-title-color;
+	}
+	.price {
+		//color: $product-price-color;
+	}
+}
+
+// single product page
+.product-info {
+	.price.large {
+		font-size: 120%;
+	}
+	.variations {
+		max-width: 400px;
+		
+	}
+	.product-addon-registration-policy {
+		input {
+			display: none;
+		}
+	}
+}
+.product { // tighten up product add ons ()
+	div.product-addon {
+		margin: 0px;
+		border: 0px;
+		padding-top: 0px;
+		p {
+			input.input-text {
+				max-width: 450px;
+			}
+			//input[name]=""
+		}
+		p.form-row {
+			margin-bottom: 0px;
+			//background-color: red;
+		}
+	}
+	.product-addon-date-of-birth {
+		max-width: 150px;
+	}
+}
+
+/* small shopping cart on sidebar */
+// - hide image
+aside.widget_shopping_cart {
+	.widget_shopping_cart_content {
+		li.mini_cart_item {
+			padding-left: 0px;
+			img {
+				display: none;
+			}
+			
+		}
+		
+	}
+}
+/*  shopping cart, checkout  & mini-cart widget */
+// hide most of the product addons & variations
+.woocommerce .cart-wrapper .cart_item, // shopping cart page
+.woocommerce .shop_table .cart_item, // checkout page
+aside.widget_shopping_cart .widget_shopping_cart_content  // sidebar widget
+{
+	dl.variation {
+				dt {
+					display: none;
+				}
+				dd { // by default dont display the variations
+					display: none;
+				} // but do display the session, & student name
+				dd.variation-Semester,
+				dd.variation-Session,
+				dd.variation-StudentName {
+					display: inline-block;
+				}
+			}
+}
+// shopping cart.
+
+// badges
+.reach-badge-loop-container .yith-wcbm-badge {
+	position: relative!important;
+	margin: auto;
+}
+.reach-badge-loop-container,
+.reach-badge-container {
+	.yith-wcbm-badge {
+		font-weight: bold;
+		font-size: x-large;
+		line-height: 30px;
+		height: 30px;
+		width: 120px;
+	}
+}
+

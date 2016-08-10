@@ -1,0 +1,57 @@
+/* Colors ---------------------------------------------- */
+// Font Colors
+$linkcolor: #627f9a;// bluey-grey //#a62425;
+$titleFontColor: #a62425;
+$masthead-background: #5C7253;
+$title-color: #5C7253;
+$logo-font-color: white;
+$tagline-color: #EDD7AE;
+$alt-text-color: #EDD7AE;
+$content-font-color: #333; 
+// Background colors: 
+
+$bkgoundContent: #FFFFFF; // 
+$menuBarbkg: #D14719; //
+
+// border colors
+$tab-border: #DADADA;
+
+/* Typography ------------------------------------------ */
+p {
+	font-size: 110%; // make font larger
+	//color:  $content-font-color;
+}
+body,
+blockquote,
+blockquote p {
+	color: $content-font-color;
+}
+
+.penob_alt_color, .penob_alt_color a {
+	color: $alt-text-color!important;
+
+}
+.penob_font_thin {
+	font-weight: lighter;
+}
+
+.penob_green {
+	color: $title-color;
+}
+.penob_h4_smaller {
+	font-size: 20px;
+}
+/* standard stuff */
+ul, ol, dl {
+	//list-style: inside;
+	list-style: outside;
+}
+
+.widget_nav_menu ul li a {
+	color: $linkcolor;
+	font-size: larger;
+}
+.reach-logo:before {
+	content: url('images/favicon.png');
+	padding-right: 3px;
+}

@@ -1,0 +1,275 @@
+@import url("../flatsome/css/foundation.css");
+/*
+Theme Name: Penobscott
+Description: Theme for the Penobscot Language School
+Author: Reach Maine
+Template: flatsome
+Version: 2.5.6
+*/
+/* Colors ---------------------------------------------- */
+/* Typography ------------------------------------------ */
+p {
+  font-size: 110%; }
+
+body,
+blockquote,
+blockquote p {
+  color: #333333; }
+
+.penob_alt_color, .penob_alt_color a {
+  color: #edd7ae !important; }
+
+.penob_font_thin {
+  font-weight: lighter; }
+
+.penob_green {
+  color: #5c7253; }
+
+.penob_h4_smaller {
+  font-size: 20px; }
+
+/* standard stuff */
+ul, ol, dl {
+  list-style: outside; }
+
+.widget_nav_menu ul li a {
+  color: #627f9a;
+  font-size: larger; }
+
+.reach-logo:before {
+  content: url("images/favicon.png");
+  padding-right: 3px; }
+
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+@media print {
+  body #masthead a[href]:after, body #site-navigation a[href]:after, body #menu-top-nav-and-footer-nav a[href]:after, body #menu-footer a[href]:after {
+    content: ""; } }
+.product-small p.name {
+  font-size: x-large; }
+
+.product-info .price.large {
+  font-size: 120%; }
+.product-info .variations {
+  max-width: 400px; }
+.product-info .product-addon-registration-policy input {
+  display: none; }
+
+.product div.product-addon {
+  margin: 0px;
+  border: 0px;
+  padding-top: 0px; }
+  .product div.product-addon p input.input-text {
+    max-width: 450px; }
+  .product div.product-addon p.form-row {
+    margin-bottom: 0px; }
+.product .product-addon-date-of-birth {
+  max-width: 150px; }
+
+/* small shopping cart on sidebar */
+aside.widget_shopping_cart .widget_shopping_cart_content li.mini_cart_item {
+  padding-left: 0px; }
+  aside.widget_shopping_cart .widget_shopping_cart_content li.mini_cart_item img {
+    display: none; }
+
+/*  shopping cart, checkout  & mini-cart widget */
+.woocommerce .cart-wrapper .cart_item dl.variation dt,
+.woocommerce .shop_table .cart_item dl.variation dt,
+aside.widget_shopping_cart .widget_shopping_cart_content dl.variation dt {
+  display: none; }
+.woocommerce .cart-wrapper .cart_item dl.variation dd,
+.woocommerce .shop_table .cart_item dl.variation dd,
+aside.widget_shopping_cart .widget_shopping_cart_content dl.variation dd {
+  display: none; }
+.woocommerce .cart-wrapper .cart_item dl.variation dd.variation-Semester,
+.woocommerce .cart-wrapper .cart_item dl.variation dd.variation-Session,
+.woocommerce .cart-wrapper .cart_item dl.variation dd.variation-StudentName,
+.woocommerce .shop_table .cart_item dl.variation dd.variation-Semester,
+.woocommerce .shop_table .cart_item dl.variation dd.variation-Session,
+.woocommerce .shop_table .cart_item dl.variation dd.variation-StudentName,
+aside.widget_shopping_cart .widget_shopping_cart_content dl.variation dd.variation-Semester,
+aside.widget_shopping_cart .widget_shopping_cart_content dl.variation dd.variation-Session,
+aside.widget_shopping_cart .widget_shopping_cart_content dl.variation dd.variation-StudentName {
+  display: inline-block; }
+
+.reach-badge-loop-container .yith-wcbm-badge {
+  position: relative !important;
+  margin: auto; }
+
+.reach-badge-loop-container .yith-wcbm-badge,
+.reach-badge-container .yith-wcbm-badge {
+  font-weight: bold;
+  font-size: x-large;
+  line-height: 30px;
+  height: 30px;
+  width: 120px; }
+
+/* =Theme customization starts here */
+#masthead {
+  background-color: #5c7253 !important; }
+  #masthead #logo a {
+    color: white; }
+  #masthead #logo #tag-line {
+    color: #edd7ae; }
+  #masthead .right-links #menu-top-bar-menu li, #masthead .right-links #menu-top-bar-menu li a {
+    color: white;
+    font-size: 110%; }
+  #masthead .mobile-menu .icon-menu {
+    color: #edd7ae; }
+
+#site-navigation li, #site-navigation li a {
+  font-size: 100%;
+  opacity: .8; }
+
+ul.header-nav a.nav-top-link
+.block-html-after-header {
+  border-bottom: 10px solid #edd7ae; }
+  ul.header-nav a.nav-top-link
+  .block-html-after-header .ux-slider {
+    margin-bottom: 0px; }
+
+.block-html-after-header .ux-slider {
+  margin-bottom: 20px; }
+
+.product-page,
+.page-wrapper,
+.category-page {
+  padding-top: 10px; }
+
+.page-wrapper #secondary {
+  padding-top: 5px; }
+.page-wrapper .entry-content {
+  margin-top: 0px; }
+  .page-wrapper .entry-content .tribe-events-before-html h1 {
+    margin-top: 0px;
+    text-transform: uppercase;
+    font-size: 1.625em; }
+
+.tabbed-content.shortcode_tabgroup ul.tabs {
+  border-top: 0px;
+  border-bottom: 2px solid #dadada; }
+  .tabbed-content.shortcode_tabgroup ul.tabs li {
+    border: 1px solid #dadada; }
+    .tabbed-content.shortcode_tabgroup ul.tabs li a {
+      padding-left: 10px;
+      color: #868686;
+      width: 100%; }
+  .tabbed-content.shortcode_tabgroup ul.tabs li.active {
+    border-top: 4px solid #333;
+    border-left: 1px solid #808080;
+    border-right: 1px solid #808080;
+    margin-top: 1px; }
+    .tabbed-content.shortcode_tabgroup ul.tabs li.active a {
+      color: #333;
+      border: 0px; }
+
+.penobscot_banner_bottom .ux_banner .inner.bottom {
+  bottom: 0 !important; }
+  .penobscot_banner_bottom .ux_banner .inner.bottom .inner-wrap {
+    padding-left: 5px !important;
+    padding-right: 0px !important; }
+
+h4.penob_h4_smaller {
+  font-size: 20px; }
+
+.from_the_blog_comments {
+  display: none;
+  visibility: hidden; }
+
+aside.widget.widget_recent_entries li {
+  padding-bottom: 15px; }
+
+.widget-title {
+  color: #5c7253; }
+
+.widget_woothemes_our_team .team-member {
+  clear: both;
+  padding-top: 20px; }
+  .widget_woothemes_our_team .team-member figure {
+    width: 225px !important;
+    padding-right: 10px;
+    float: left; }
+    .widget_woothemes_our_team .team-member figure img {
+      border-radius: 0px;
+      width: 100%; }
+.widget_woothemes_our_team .team-member:after {
+  clear: both; }
+
+aside.bottom_close_menu.widget_nav_menu {
+  margin-bottom: 0px; }
+  aside.bottom_close_menu.widget_nav_menu ul.menu {
+    padding-bottom: 0px; }
+
+.easy_testimonial p {
+  margin-bottom: 0px; }
+.easy_testimonial .testimonial_body {
+  font-size: 95%; }
+.easy_testimonial p.testimonial_author cite:before {
+  content: ""; }
+.easy_testimonial p.testimonial_author cite .testimonial-client,
+.easy_testimonial p.testimonial_author cite .testimonial-position,
+.easy_testimonial p.testimonial_author cite .testimonial-other {
+  font-size: medium;
+  padding-left: 10px;
+  color: #5c7253; }
+
+ul.ecs-event-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; }
+  ul.ecs-event-list li.ecs-event {
+    border: 1px solid #EEE;
+    padding: 1%;
+    margin: 1%;
+    float: left;
+    max-width: 48%; }
+
+.event-cat-shortcode .duration {
+  display: block; }
+
+#submit.donate-btn {
+  background-color: red;
+  width: 147px;
+  height: 47px; }
+
+/* ===================================================== */
+/* Media Queries --------------------------------------- */
+/* ===================================================== */
+/* Foundation Block Grids for above small breakpoint */
+/***************------------- 15. MOBILE -------------*****************/
+@media only screen and (max-width: 48em) {
+  #masthead {
+    height: inherit !important; }
+    #masthead .header-container {
+      display: block; }
+    #masthead #right-logo-phone {
+      display: block; }
+      #masthead #right-logo-phone .eai-right-image {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        float: none; }
+
+  .type-page h1.entry-title,
+  .type-post h1.entry-title,
+  .category-page h1.entry-title,
+  .product-page h1.entry-title,
+  .search-results .text-center h1.entry-title {
+    font-size: x-large;
+    text-align: center; }
+
+  .category-filtering,
+  .category-filtering #shop-sidebar {
+    display: none !important;
+    height: 0px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px; } }
+/* Medium Displays: 768px - 1279px */
+/* Styles for screens that are atleast 768px; */
+/* Large Displays: 1280px - 1440px */
+/* X-Large Displays: 1400px and up */
+/* breakpoints for ux_banners */
+@media only screen and (max-width: 440px) {
+  #masthead {
+    height: 120px; } }
