@@ -23,6 +23,20 @@
 			display: none;
 		}
 	}
+	.product-addon-location {
+		.addon-name {
+			max-width: 240px;
+			float: left; 
+			line-height: 40px;
+		}
+		p {
+			float: left;
+			padding-left: 40px;
+			select {
+				padding-right: 28px;
+			}
+		}
+	}
 }
 .product { // tighten up product add ons ()
 	div.product-addon {

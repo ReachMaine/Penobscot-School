@@ -55,6 +55,15 @@ ul, ol, dl {
   max-width: 400px; }
 .product-info .product-addon-registration-policy input {
   display: none; }
+.product-info .product-addon-location .addon-name {
+  max-width: 240px;
+  float: left;
+  line-height: 40px; }
+.product-info .product-addon-location p {
+  float: left;
+  padding-left: 40px; }
+  .product-info .product-addon-location p select {
+    padding-right: 28px; }
 
 .product div.product-addon {
   margin: 0px;
