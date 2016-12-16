@@ -5,15 +5,15 @@ Author: Reach Maine
 Template: flatsome
 Version: 2.5.6
 */
- 
+
 @import url("../flatsome/css/foundation.css");
 @import "partials/settings";
-@import "partials/print"; 
+@import "partials/print";
 @import "partials/woo";
- 
+
 /* =Theme customization starts here */
 #top-bar { // turn off in theme options.
-	
+
 }
 #masthead {
 	background-color: $masthead-background!important;
@@ -56,7 +56,7 @@ ul.header-nav a.nav-top-link
 	margin-bottom: 20px;
 }
 .product-page,
-.page-wrapper, 
+.page-wrapper,
 .category-page {
 	padding-top: 10px; // was 20px
 }
@@ -124,7 +124,7 @@ h4.penob_h4_smaller {
 }
 
 
-.from_the_blog_comments { // hide comments on blog shortcode 
+.from_the_blog_comments { // hide comments on blog shortcode
 	display: none;
 	visibility: hidden;
 }
@@ -140,11 +140,12 @@ aside.widget.widget_recent_entries { // give recent entries some breathing room
 	color: $title-color;
 }
 
-// our team plugin/ custom post type 
+// our team plugin/ custom post type
 .widget_woothemes_our_team {
 	.team-member {
 		clear: both;
 		padding-top: 20px;
+        min-height: 245px; // height of impage + above padding.
 		figure {
 			width: 225px!important;
 			padding-right: 10px;
@@ -167,7 +168,7 @@ aside.bottom_close_menu.widget_nav_menu {
 }
 
 
-// testimonitals 
+// testimonitals
 .easy_testimonial { //blockquote
 	p {
 		margin-bottom: 0px;
@@ -182,7 +183,7 @@ aside.bottom_close_menu.widget_nav_menu {
 			content: "";
 		}
 		cite {
-			.testimonial-client, 
+			.testimonial-client,
 			.testimonial-position,
 			.testimonial-other {
 				font-size: medium;
@@ -190,7 +191,7 @@ aside.bottom_close_menu.widget_nav_menu {
 				color: $title-color;
 			}
 		}
-		
+
 	}
 
 }
@@ -214,7 +215,7 @@ ul.ecs-event-list {
 	display: block;
 }
 
-#submit.donate-btn { // style copied from 
+#submit.donate-btn { // style copied from
 	background-color: red;
 	width: 147px;
 	height: 47px;

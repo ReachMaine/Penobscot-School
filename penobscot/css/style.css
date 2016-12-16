@@ -194,7 +194,8 @@ aside.widget.widget_recent_entries li {
 
 .widget_woothemes_our_team .team-member {
   clear: both;
-  padding-top: 20px; }
+  padding-top: 20px;
+  min-height: 245px; }
   .widget_woothemes_our_team .team-member figure {
     width: 225px !important;
     padding-right: 10px;
