@@ -1,7 +1,7 @@
-<?php 
+<?php
 /* woocommerce hooks & filters here */
 
-	/***************************** 
+	/*****************************
 	* things in this function are called after flatsome is setup, if want to use flatsome values OR calls OR
 	to overwrite flatsome specific things.  they need to go here, everytning else can just go in the file.
 	**********************/
@@ -26,47 +26,47 @@
 
 	}
 
-	// hide count from category 
+	// hide count from category
 	add_filter( 'woocommerce_subcategory_count_html', 'woo_remove_category_products_count' );
 	function woo_remove_category_products_count() {
 		return;
 	}
 
 	// single product, move price farther down the page (not 2nd)
- 	//woocommerce_template_single_price	
+ 	//woocommerce_template_single_price
 	remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );
 	add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 25 );
 
 
     /* change the add to cart text.... */
-	// for single products 
+	// for single products
 	add_filter( 'woocommerce_product_single_add_to_cart_text' , 'custom_woocommerce_product_add_to_cart_text' ); // product
 	function custom_woocommerce_product_add_to_cart_text() {
 		global $product;
-	
+
 		$product_type = $product->product_type;
 		switch ( $product_type ) {
 			case 'variable':
 				return __( 'Register','woocommerce' ); // was 'add to cart'
 				break;
-			default: 
+			default:
 				return __( 'Add to Cart','woocommerce' ); // was 'add to cart'
 				break;
 		}
 	}
 
-	// for add to cart text in loops 
+	// for add to cart text in loops
 	add_filter ('addons_add_to_cart_text', 'custom_woocommerce_loop_add_to_cart_text');
 	add_filter( 'woocommerce_product_add_to_cart_text' , 'custom_woocommerce_loop_add_to_cart_text' );  // product loops
 	function custom_woocommerce_loop_add_to_cart_text() {
 			global $product;
-	
+
 			$product_type = $product->product_type;
 			switch ( $product_type ) {
 				case 'external':
 					$retstring  = 'Buy product';
 					break;
-				case 'addons': 
+				case 'addons':
 					$retstring = "Learn More"; // was select options
 					break;
 				case 'grouped':
@@ -81,7 +81,7 @@
 				default:
 					$retstring  ='Learn more';
 			}
-			return __( $retstring, 'woocommerce' ); 
+			return __( $retstring, 'woocommerce' );
 			//return __($retstring.' '.$product_type);
 	}
 
@@ -98,7 +98,7 @@
 	// Remove prices from loop
 	remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10 );
 
-	// add custom field/desc in product loop 
+	// add custom field/desc in product loop
 	add_action('woocommerce_after_shop_loop_item_title', 'penob_custom_info', 10);
 	function penob_custom_info() {
 		global $product;
@@ -107,19 +107,19 @@
 			echo do_shortcode($product_byline);
 		} else {
 			//echo "nada.";
-		} 
+		}
 	}
 
 
-	
-		 
+
+
 	add_filter ('yith_wcdp_pay_deposit_label', 'filter_deposit_label');
 	function filter_deposit_label($label) {
 		return $label." - non-refundable ";
 	}
 
 	// add badge(s) to shop loop.
-	add_action('woocommerce_after_shop_loop_item_title',  'reach_show_badge_loop' , 10 ); 
+	add_action('woocommerce_after_shop_loop_item_title',  'reach_show_badge_loop' , 10 );
 	add_action( 'woocommerce_single_product_summary', 'reach_show_badge_single', 7 );
 	function reach_show_badge_loop() {
 		$html_out = "";
@@ -143,4 +143,15 @@
         	$badge_container = yith_wcbm_get_badge( $id_badge, $product->id );
         }
         return $badge_container;
+	}
+
+	// remove variable pricing range from single product page - price will still display once pick variation.
+	// need this since now using variations for deposit (as the Yith deposit plugin not working anymore)
+	// add_filter( 'woocommerce_variable_sale_price_html', 'reach_variation_price_format', 10, 2 ); // not worried about sale prices
+	add_filter( 'woocommerce_variable_price_html', 'reach_variation_price_format', 10, 2 );
+	function reach_variation_price_format( $price, $product ) {
+		if ( is_product() ) {
+			$price = '';
+ 		}
+		return $price;
 	}
