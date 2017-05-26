@@ -1,5 +1,5 @@
-<?php 
-/* languages customizations  
+<?php
+/* languages customizations
 - add require_once(get_stylesheet_directory().'/custom/language.php'); to functions.php to make this work.
 */
 	if ( !function_exists('eai_change_theme_text') ){
@@ -10,6 +10,10 @@
 			    	case 'Return To Shop':
 			    		$translated_text = __('Ok','woocommerce');
 			    		break;
+						case 'No products were found matching your selection.' :
+							$translated_text = 'There are currently no classes scheduled. Classes will be posted when the next session begins.';
+							break;
+
 		            /* case 'Category' :
 		                $translated_text = __( '',  $domain  );
 		                break; */
