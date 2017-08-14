@@ -11,7 +11,11 @@
 			    		$translated_text = __('Ok','woocommerce');
 			    		break;
 						case 'No products were found matching your selection.' :
-							$translated_text = 'There are currently no classes scheduled. Classes will be posted when the next session begins.';
+							if (is_product_category('portuguese-classes')) {
+								$translated_text = 'There are no Portuguese classes scheduled for Fall, 2017.  Please inquire about tutorials.';
+							} else {
+								$translated_text = 'There are currently no classes scheduled. Classes will be posted when the next session begins.';
+							}
 							break;
 
 		            /* case 'Category' :
