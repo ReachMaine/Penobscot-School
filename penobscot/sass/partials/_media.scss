@@ -7,7 +7,7 @@
 @media only screen and (min-width: 48em) {
 }
 /***************------------- 15. MOBILE -------------*****************/
-@media only screen and (max-width: 48em) { // point at which right links disables & phone menu appears
+@media only screen and (max-width: 48em) { // point at which right links disables & phone menu appears  approx 768
 	#masthead {
 		height: inherit!important;
 		.header-container {
@@ -19,12 +19,12 @@
 				padding-top: 10px;
 				padding-bottom: 10px;
 				float: none;
-			}		
+			}
 		}
 
 	}
 	// page titles at mobile
-	.type-page h1.entry-title, 
+	.type-page h1.entry-title,
 	.type-post h1.entry-title,
 	.category-page  h1.entry-title,
 	.product-page h1.entry-title,
@@ -32,8 +32,8 @@
 		font-size: x-large;
 		text-align: center;
 	}
-	
-	.category-filtering, 
+
+	.category-filtering,
 	.category-filtering #shop-sidebar {
 		display: none!important;
 		height: 0px;
@@ -42,11 +42,20 @@
 		border: 0px;
 	}
 
+
 }
 
 /* Medium Displays: 768px - 1279px */
 /* Styles for screens that are atleast 768px; */
 @media only screen and (min-width: 48em) {
+	// featured image for posts
+		.single-post article.post {
+				.entry-image {
+					width: 50%;
+					float: left;
+					padding-right: 10px;
+				}
+			}
 }
 /* Large Displays: 1280px - 1440px */
 @media only screen and (min-width: 80em) {

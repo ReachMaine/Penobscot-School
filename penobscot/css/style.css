@@ -1,4 +1,3 @@
-@import url("../flatsome/css/foundation.css");
 /*
 Theme Name: Penobscott
 Description: Theme for the Penobscot Language School
@@ -6,6 +5,7 @@ Author: Reach Maine
 Template: flatsome
 Version: 2.5.6
 */
+@import url("../flatsome/css/foundation.css");
 /* Colors ---------------------------------------------- */
 /* Typography ------------------------------------------ */
 p {
@@ -14,16 +14,16 @@ p {
 body,
 blockquote,
 blockquote p {
-  color: #333333; }
+  color: #333; }
 
 .penob_alt_color, .penob_alt_color a {
-  color: #edd7ae !important; }
+  color: #EDD7AE !important; }
 
 .penob_font_thin {
   font-weight: lighter; }
 
 .penob_green {
-  color: #5c7253; }
+  color: #5C7253; }
 
 .penob_h4_smaller {
   font-size: 20px; }
@@ -116,16 +116,16 @@ aside.widget_shopping_cart .widget_shopping_cart_content dl.variation dd.variati
 
 /* =Theme customization starts here */
 #masthead {
-  background-color: #5c7253 !important; }
+  background-color: #5C7253 !important; }
   #masthead #logo a {
     color: white; }
   #masthead #logo #tag-line {
-    color: #edd7ae; }
+    color: #EDD7AE; }
   #masthead .right-links #menu-top-bar-menu li, #masthead .right-links #menu-top-bar-menu li a {
     color: white;
     font-size: 110%; }
   #masthead .mobile-menu .icon-menu {
-    color: #edd7ae; }
+    color: #EDD7AE; }
 
 #site-navigation li, #site-navigation li a {
   font-size: 100%;
@@ -133,7 +133,7 @@ aside.widget_shopping_cart .widget_shopping_cart_content dl.variation dd.variati
 
 ul.header-nav a.nav-top-link
 .block-html-after-header {
-  border-bottom: 10px solid #edd7ae; }
+  border-bottom: 10px solid #EDD7AE; }
   ul.header-nav a.nav-top-link
   .block-html-after-header .ux-slider {
     margin-bottom: 0px; }
@@ -157,9 +157,9 @@ ul.header-nav a.nav-top-link
 
 .tabbed-content.shortcode_tabgroup ul.tabs {
   border-top: 0px;
-  border-bottom: 2px solid #dadada; }
+  border-bottom: 2px solid #DADADA; }
   .tabbed-content.shortcode_tabgroup ul.tabs li {
-    border: 1px solid #dadada; }
+    border: 1px solid #DADADA; }
     .tabbed-content.shortcode_tabgroup ul.tabs li a {
       padding-left: 10px;
       color: #868686;
@@ -190,7 +190,7 @@ aside.widget.widget_recent_entries li {
   padding-bottom: 15px; }
 
 .widget-title {
-  color: #5c7253; }
+  color: #5C7253; }
 
 .widget_woothemes_our_team .team-member {
   clear: both;
@@ -222,7 +222,7 @@ aside.bottom_close_menu.widget_nav_menu {
 .easy_testimonial p.testimonial_author cite .testimonial-other {
   font-size: medium;
   padding-left: 10px;
-  color: #5c7253; }
+  color: #5C7253; }
 
 ul.ecs-event-list {
   list-style: none;
@@ -277,6 +277,11 @@ ul.ecs-event-list {
     border: 0px; } }
 /* Medium Displays: 768px - 1279px */
 /* Styles for screens that are atleast 768px; */
+@media only screen and (min-width: 48em) {
+  .single-post article.post .entry-image {
+    width: 50%;
+    float: left;
+    padding-right: 10px; } }
 /* Large Displays: 1280px - 1440px */
 /* X-Large Displays: 1400px and up */
 /* breakpoints for ux_banners */
