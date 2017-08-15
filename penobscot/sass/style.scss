@@ -134,6 +134,17 @@ aside.widget.widget_recent_entries { // give recent entries some breathing room
 	}
 }
 
+/*** start single post ***/
+.single-post {
+	article.post {
+		footer.entry-meta {  // language'd the text out, now need to get rid of surrounding spaces.
+			clear: both;
+			border-top: 0px;
+			margin: 0px;
+			padding: 0px;
+		}
+	}
+}
 // widgets
 
 .widget-title {

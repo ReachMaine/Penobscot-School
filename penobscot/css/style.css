@@ -189,6 +189,13 @@ h4.penob_h4_smaller {
 aside.widget.widget_recent_entries li {
   padding-bottom: 15px; }
 
+/*** start single post ***/
+.single-post article.post footer.entry-meta {
+  clear: both;
+  border-top: 0px;
+  margin: 0px;
+  padding: 0px; }
+
 .widget-title {
   color: #5C7253; }
 

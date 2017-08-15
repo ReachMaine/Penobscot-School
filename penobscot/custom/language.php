@@ -39,6 +39,11 @@
 		            case 'Doctors':
 		            	$translated_text = __( 'Providers', $theme_text_domain);
 		            	break; */
+								case 'This entry was posted in %1$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.':
+								case 'This entry was posted in %1$s and tagged %2$s.':
+									$translated_text = "";
+									break;
+
 		            case 'Back to services':
 		            	$translated_text = __( 'All Our Services',  $theme_text_domain  );
 		        }
