@@ -15,6 +15,8 @@
 								$translated_text = 'There are no Portuguese classes scheduled for Fall, 2017.  Please inquire about tutorials.';
 							} elseif (is_product_category('swedish-classes')) {
 								$translated_text = 'Swedish will not be offered during the Fall, 2017 semester.';
+							} elseif (is_product_category('chinese')) {
+								$translated_text = 'There are no Chinese classes scheduled for Fall, 2017.  Please inquire about tutorials.';
 							} else {
 								$translated_text = 'There are currently no classes scheduled. Classes will be posted when the next session begins.';
 							}
