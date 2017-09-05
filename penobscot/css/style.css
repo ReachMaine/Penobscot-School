@@ -182,6 +182,11 @@ ul.header-nav a.nav-top-link
 h4.penob_h4_smaller {
   font-size: 20px; }
 
+.language-classes-grid div.columns {
+  margin-bottom: 20px; }
+  .language-classes-grid div.columns .ux_banner h4 {
+    font-size: 180% !important; }
+
 .from_the_blog_comments {
   display: none;
   visibility: hidden; }
@@ -266,6 +271,14 @@ ul.ecs-event-list {
         padding-top: 10px;
         padding-bottom: 10px;
         float: none; }
+
+  aside.bottom_close_menu {
+    display: none; }
+
+  .language-classes-grid div.columns {
+    width: 50% !important; }
+    .language-classes-grid div.columns div.ux_banner {
+      height: 140px !important; }
 
   .type-page h1.entry-title,
   .type-post h1.entry-title,

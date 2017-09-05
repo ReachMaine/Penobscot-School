@@ -123,6 +123,15 @@ h4.penob_h4_smaller {
 	font-size: 20px;
 }
 
+.language-classes-grid { //adding bottom margin to the class banners on Weekly Language Classes page
+	div.columns {
+		margin-bottom: 20px;
+		.ux_banner h4 {
+			font-size: 180% !important;
+		}
+	}
+}
+
 
 .from_the_blog_comments { // hide comments on blog shortcode
 	display: none;

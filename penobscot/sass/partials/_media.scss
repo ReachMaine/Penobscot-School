@@ -21,8 +21,21 @@
 				float: none;
 			}
 		}
-
 	}
+
+	aside.bottom_close_menu { // hiding side menu at mobile
+		display: none;
+	}
+
+	.language-classes-grid {
+		div.columns {
+			width: 50% !important;
+			div.ux_banner {
+				height: 140px !important;
+			}
+		}
+	}
+
 	// page titles at mobile
 	.type-page h1.entry-title,
 	.type-post h1.entry-title,

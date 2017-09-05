@@ -38,9 +38,9 @@ if($flatsome_opt['related_products'] !== 'hidden' && $products->have_posts() ) :
 
 <div class="related products">
 <h2><?php /* _e( 'Related Products', 'woocommerce' ); */ _e( 'You might be interested in...', 'woocommerce' );?></h2>
-    <ul class="<?php if($flatsome_opt['related_products'] == 'slider') echo 'ux-row-slider slider-nav-push slider-nav-reveal js-flickity '; ?> 
-    	large-block-grid-<?php echo $flatsome_opt['related_products_pr_row']; ?> small-block-grid-2"
-			data-flickity-options='{ 
+    <ul class="<?php if($flatsome_opt['related_products'] == 'slider') echo 'ux-row-slider slider-nav-push slider-nav-reveal js-flickity '; ?>
+    	large-block-grid-<?php echo $flatsome_opt['related_products_pr_row']; ?> small-block-grid-1"
+			data-flickity-options='{
 	            "cellAlign": "left",
 	            "wrapAround": true,
 	            "autoPlay": false,
@@ -58,7 +58,7 @@ if($flatsome_opt['related_products'] !== 'hidden' && $products->have_posts() ) :
 
 			<?php endwhile; // end of the loop. ?>
     </ul>
-	
+
 </div><!-- Related products -->
 
 <?php
