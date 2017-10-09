@@ -12,10 +12,23 @@
 .tribe-events-single-section.tribe-events-event-meta  .tribe-events-meta-group.tribe-events-meta-group-details,
 .tribe-events-single-section.tribe-events-event-meta  .tribe-events-meta-group.tribe-events-meta-group-organizer
  {
-	width: 50%; 
+	width: 50%;
 }
 .column.tribe-week-grid-hours { // s.t. week events dont show at bottom of time slots.
 	width: 40px;
 }
 
+// single event
+.single-tribe_events #tribe-events-content {
+  .tribe_events {// post
+    .tribe-events-event-image {
+    // see media.scss
+    }
+    .tribe-events-single-event-description {
+      ul {
+        list-style: inside;
+      }
+    }
+  }
 
+}
