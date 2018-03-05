@@ -261,6 +261,12 @@ ul.ecs-event-list {
 /* Foundation Block Grids for above small breakpoint */
 /***************------------- 15. MOBILE -------------*****************/
 @media only screen and (max-width: 48em) {
+  .hide-tablet {
+    display: none; }
+
+  .tablet-wide {
+    width: 100%; }
+
   #masthead {
     height: inherit !important; }
     #masthead .header-container {
@@ -313,3 +319,9 @@ ul.ecs-event-list {
 @media only screen and (max-width: 440px) {
   #masthead {
     height: 120px; } }
+@media only screen and (max-width: 425px) {
+  .hide-phone {
+    display: none; }
+
+  .phone-wide {
+    width: 100%; } }

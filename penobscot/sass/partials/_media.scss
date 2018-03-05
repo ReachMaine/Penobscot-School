@@ -8,6 +8,12 @@
 }
 /***************------------- 15. MOBILE -------------*****************/
 @media only screen and (max-width: 48em) { // point at which right links disables & phone menu appears  approx 768
+	.hide-tablet {
+		display: none;
+	}
+	.tablet-wide {
+		width: 100%;
+	}
 	#masthead {
 		height: inherit!important;
 		.header-container {
@@ -96,5 +102,13 @@
 @media only screen and (max-width: 440px) { // custom break point for penobscot header
 	#masthead {
 		height: 120px;
+	}
+}
+@media only screen and (max-width: 425px) {
+	.hide-phone {
+		display: none;
+	}
+	.phone-wide {
+		width: 100%;
 	}
 }
