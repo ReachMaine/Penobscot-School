@@ -11,12 +11,11 @@
 			    		$translated_text = __('Ok','woocommerce');
 			    		break;
 						case 'No products were found matching your selection.' :
-							if (is_product_category('portuguese-classes')) {
-								$translated_text = 'There are no Portuguese classes scheduled for Fall, 2017.  Please inquire about tutorials.';
-							} elseif (is_product_category('swedish-classes')) {
-								$translated_text = 'Swedish will not be offered during the Fall, 2017 semester.';
-							} elseif (is_product_category('chinese')) {
-								$translated_text = 'There are no Chinese classes scheduled for Fall, 2017.  Please inquire about tutorials.';
+							if (is_product_category()) {
+								$translated_text = 'There are no '.single_term_title("", false).' classes scheduled. ';
+								$translated_text .= 'Please inquire about a semi-private or private tutorial. </br>';
+								$translated_text .= '<a href="http://www.penobscot.us/tutorials/" class=" button primary">Learn More</a>';
+
 							} else {
 								$translated_text = 'There are currently no classes scheduled. Classes will be posted when the next session begins.';
 							}
