@@ -16,7 +16,7 @@
 	}
 	.variations {
 		max-width: 400px;
-		
+
 	}
 	.product-addon-registration-policy {
 		input {
@@ -26,7 +26,7 @@
 	.product-addon-location {
 		.addon-name {
 			max-width: 240px;
-			float: left; 
+			float: left;
 			line-height: 40px;
 		}
 		p {
@@ -68,9 +68,9 @@ aside.widget_shopping_cart {
 			img {
 				display: none;
 			}
-			
+
 		}
-		
+
 	}
 }
 /*  shopping cart, checkout  & mini-cart widget */
@@ -110,4 +110,6 @@ aside.widget_shopping_cart .widget_shopping_cart_content  // sidebar widget
 		width: 120px;
 	}
 }
-
+.screen-reader-text {
+  display: none;
+}

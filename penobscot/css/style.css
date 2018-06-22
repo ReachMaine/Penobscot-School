@@ -114,6 +114,9 @@ aside.widget_shopping_cart .widget_shopping_cart_content dl.variation dd.variati
   height: 30px;
   width: 120px; }
 
+.screen-reader-text {
+  display: none; }
+
 /* =Theme customization starts here */
 #masthead {
   background-color: #5C7253 !important; }
@@ -124,6 +127,10 @@ aside.widget_shopping_cart .widget_shopping_cart_content dl.variation dd.variati
   #masthead .right-links #menu-top-bar-menu li, #masthead .right-links #menu-top-bar-menu li a {
     color: white;
     font-size: 110%; }
+  #masthead .right-links #menu-top-bar-menu .nav-dropdown li a {
+    text-transform: none;
+    font-size: .9em;
+    text-align: center; }
   #masthead .mobile-menu .icon-menu {
     color: #EDD7AE; }
 
