@@ -49,6 +49,27 @@ ul, ol, dl {
 .product-small p.name {
   font-size: x-large; }
 
+.product div.product-addon {
+  margin: 0px;
+  border: 0px;
+  padding-top: 0px; }
+  .product div.product-addon p input.input-text {
+    max-width: 450px; }
+  .product div.product-addon p.form-row {
+    margin-bottom: 0px; }
+.product div.product-addon.product-addon-student-name {
+  clear: both;
+  margin-top: 10px;
+  border-top: 1px solid #e4e4e4;
+  padding-top: 20px; }
+.product .product-addon-date-of-birth, .product .product-addon-invoice {
+  max-width: 150px; }
+.product .product-addon-new-registration-or-invoiced-registration, .product .product-addon-invoiced-registrations {
+  width: 50%;
+  float: left; }
+  .product .product-addon-new-registration-or-invoiced-registration .input-text.addon, .product .product-addon-invoiced-registrations .input-text.addon {
+    max-width: 150px; }
+
 .product-info .price.large {
   font-size: 120%; }
 .product-info .variations {
@@ -64,17 +85,6 @@ ul, ol, dl {
   padding-left: 40px; }
   .product-info .product-addon-location p select {
     padding-right: 28px; }
-
-.product div.product-addon {
-  margin: 0px;
-  border: 0px;
-  padding-top: 0px; }
-  .product div.product-addon p input.input-text {
-    max-width: 450px; }
-  .product div.product-addon p.form-row {
-    margin-bottom: 0px; }
-.product .product-addon-date-of-birth {
-  max-width: 150px; }
 
 /* small shopping cart on sidebar */
 aside.widget_shopping_cart .widget_shopping_cart_content li.mini_cart_item {

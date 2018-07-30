@@ -10,6 +10,40 @@
 }
 
 // single product page
+.product { // tighten up product add ons ()
+	div.product-addon {
+		margin: 0px;
+		border: 0px;
+		padding-top: 0px;
+		p {
+			input.input-text {
+				max-width: 450px;
+			}
+			//input[name]=""
+		}
+		p.form-row {
+			margin-bottom: 0px;
+			//background-color: red;
+		}
+	}
+	div.product-addon.product-addon-student-name { // usually the first of the product additiona info addons
+		clear: both;
+		margin-top: 10px;
+		border-top: 1px solid #e4e4e4;
+		padding-top: 20px;
+	}
+	.product-addon-date-of-birth, .product-addon-invoice {
+		max-width: 150px;
+	}
+	.product-addon-new-registration-or-invoiced-registration,  .product-addon-invoiced-registrations {
+		width: 50%;
+		float: left;
+		.input-text.addon  {
+			max-width: 150px;
+		}
+	}
+}
+
 .product-info {
 	.price.large {
 		font-size: 120%;
@@ -18,6 +52,7 @@
 		max-width: 400px;
 
 	}
+
 	.product-addon-registration-policy {
 		input {
 			display: none;
@@ -36,26 +71,6 @@
 				padding-right: 28px;
 			}
 		}
-	}
-}
-.product { // tighten up product add ons ()
-	div.product-addon {
-		margin: 0px;
-		border: 0px;
-		padding-top: 0px;
-		p {
-			input.input-text {
-				max-width: 450px;
-			}
-			//input[name]=""
-		}
-		p.form-row {
-			margin-bottom: 0px;
-			//background-color: red;
-		}
-	}
-	.product-addon-date-of-birth {
-		max-width: 150px;
 	}
 }
 
