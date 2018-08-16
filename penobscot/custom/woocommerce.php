@@ -40,7 +40,7 @@
 
     /* change the add to cart text.... */
 	// for single products
-	add_filter( 'woocommerce_product_single_add_to_cart_text' , 'custom_woocommerce_product_add_to_cart_text' ); // product
+ add_filter( 'woocommerce_product_single_add_to_cart_text' , 'custom_woocommerce_product_add_to_cart_text' ); // product
 	function custom_woocommerce_product_add_to_cart_text() {
 		global $product;
 
@@ -73,7 +73,7 @@
 					$retstring  ='View products';
 					break;
 				case 'simple':
-					$retstring  ='Add to Cart'; // was add to cart
+					$retstring  ='Learn More'; // was add to cart
 					break;
 				case 'variable':
 					$retstring  ='Learn More'; // was select options
