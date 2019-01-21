@@ -7,11 +7,13 @@ $title-color: #5C7253;
 $logo-font-color: white;
 $tagline-color: #EDD7AE;
 $alt-text-color: #EDD7AE;
-$content-font-color: #333; 
-// Background colors: 
+$content-font-color: #333;
+// Background colors:
 
-$bkgoundContent: #FFFFFF; // 
+$bkgoundContent: #FFFFFF; //
 $menuBarbkg: #D14719; //
+$penob-blue: #627f9a;
+$penob-green: #5c7253;
 
 // border colors
 $tab-border: #DADADA;
@@ -54,4 +56,30 @@ ul, ol, dl {
 .reach-logo:before {
 	content: url('images/favicon.png');
 	padding-right: 3px;
+}
+.penob-box {
+	text-align:center;
+	//border: 4px solid white;
+	padding-top: 10px!important;
+	padding-bottom: 10px!important;
+}
+
+.penob-box-green,
+.penob-box-green a {
+		color: white;
+		background-color: $penob-green;
+}
+.penob-box-blue,
+.penob-box-blue a {
+		color: white;
+		background-color: $penob-blue;
+}
+.penob-eq-col-row {
+ 	display: flex;
+}
+.penob-eq-col {
+		flex: 1;
+}
+.penob-border-white {
+		border: 4px solid white;
 }

@@ -40,6 +40,30 @@ ul, ol, dl {
   content: url("images/favicon.png");
   padding-right: 3px; }
 
+.penob-box {
+  text-align: center;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important; }
+
+.penob-box-green,
+.penob-box-green a {
+  color: white;
+  background-color: #5c7253; }
+
+.penob-box-blue,
+.penob-box-blue a {
+  color: white;
+  background-color: #627f9a; }
+
+.penob-eq-col-row {
+  display: flex; }
+
+.penob-eq-col {
+  flex: 1; }
+
+.penob-border-white {
+  border: 4px solid white; }
+
 /* Welcome to Compass. Use this file to define print styles.
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
@@ -317,7 +341,10 @@ ul.ecs-event-list {
     height: 0px;
     margin: 0px;
     padding: 0px;
-    border: 0px; } }
+    border: 0px; }
+
+  .penob-eq-col-row {
+    display: block; } }
 /* Medium Displays: 768px - 1279px */
 /* Styles for screens that are atleast 768px; */
 @media only screen and (min-width: 48em) {
