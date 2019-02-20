@@ -73,6 +73,12 @@ ul, ol, dl {
 .product-small p.name {
   font-size: x-large; }
 
+.product .nyp {
+  margin-bottom: 0px; }
+  .product .nyp label {
+    display: inline; }
+  .product .nyp input#nyp {
+    max-width: 200px; }
 .product div.product-addon {
   margin: 0px;
   border: 0px;

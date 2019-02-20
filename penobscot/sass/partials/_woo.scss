@@ -11,6 +11,15 @@
 
 // single product page
 .product { // tighten up product add ons ()
+	.nyp {
+		margin-bottom: 0px;
+		label {
+			display: inline;
+		}
+		input#nyp {
+			max-width: 200px;
+		}
+	}
 	div.product-addon {
 		margin: 0px;
 		border: 0px;
