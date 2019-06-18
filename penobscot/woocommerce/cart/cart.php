@@ -6,7 +6,7 @@
  * @package 	WooCommerce/Templates
  * @version     2.3.8
  */
-/* 
+/*
  * Mods
  *    4Dec15 zig - dont show blank image if no thumbnail.
  * 	  6Jan15 zig - use "Item" instead of product in table heading.
@@ -50,7 +50,7 @@ wc_print_notices();
 			if ( $_product && $_product->exists() && $cart_item['quantity'] > 0 && apply_filters( 'woocommerce_cart_item_visible', true, $cart_item, $cart_item_key ) ) {
 				?>
 				<tr class="<?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
-	
+
 					<td class="product-remove">
 						<?php
 							echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf( '<a href="%s" class="remove" title="%s"><span class="icon-close"></span></a>', esc_url( WC()->cart->get_remove_url( $cart_item_key ) ), __( 'Remove this item', 'woocommerce' ) ), $cart_item_key );
@@ -81,7 +81,8 @@ wc_print_notices();
 								echo apply_filters( 'woocommerce_cart_item_name', sprintf( '<a href="%s">%s </a>', $_product->get_permalink( $cart_item ), $_product->get_title() ), $cart_item, $cart_item_key );
 
 							// Meta data
-							echo WC()->cart->get_item_data( $cart_item );
+							//echo WC()->cart->get_item_data( $cart_item );
+							echo wc_get_formatted_cart_item_data( $cart_item);
 
                				// Backorder notification
                				if ( $_product->backorders_require_notification() && $_product->is_on_backorder( $cart_item['quantity'] ) )
@@ -143,7 +144,7 @@ wc_print_notices();
 
 		<?php woocommerce_cart_totals(); ?>
 
-		<input type="submit" class="button expand" name="update_cart" value="<?php _e( 'Update Cart', 'woocommerce' ); ?>" /> 
+		<input type="submit" class="button expand" name="update_cart" value="<?php _e( 'Update Cart', 'woocommerce' ); ?>" />
 		<input type="submit" class="checkout-button secondary expand button" name="proceed" value="<?php _e( 'Proceed to Checkout', 'woocommerce' ); ?>" />
 
 		<?php wp_nonce_field( 'woocommerce-cart' ); ?>
@@ -151,7 +152,7 @@ wc_print_notices();
 		<?php if ( WC()->cart->coupons_enabled() ) { ?>
 		<div class="coupon">
 			<h3 class="widget-title"><?php _e( 'Coupon', 'woocommerce' ); ?></h3>
-			<input type="text" name="coupon_code"  id="coupon_code" value="" placeholder="<?php _e( 'Enter Coupon', 'flatsome' ); ?>"/> 
+			<input type="text" name="coupon_code"  id="coupon_code" value="" placeholder="<?php _e( 'Enter Coupon', 'flatsome' ); ?>"/>
 			<input type="submit" class="button small expand" name="apply_coupon" value="<?php _e( 'Apply Coupon', 'woocommerce' ); ?>" />
 			<?php do_action('woocommerce_cart_coupon'); ?>
 
