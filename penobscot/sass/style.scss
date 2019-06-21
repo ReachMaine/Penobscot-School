@@ -174,7 +174,9 @@ aside.widget.widget_recent_entries { // give recent entries some breathing room
 	.team-member {
 		clear: both;
 		padding-top: 20px;
-        min-height: 245px; // height of impage + above padding.
+    min-height: 245px; // height of image + above padding.
+		border-bottom: 1px solid black;
+		margin-bottom: 10px;
 		figure {
 			width: 225px!important;
 			padding-right: 10px;
