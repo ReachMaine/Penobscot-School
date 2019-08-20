@@ -12,9 +12,9 @@
 			    		break;
 						case 'No products were found matching your selection.' :
 							if (is_product_category()) {
-								$translated_text = 'There are no '.single_term_title("", false).' classes scheduled. ';
-								$translated_text .= 'Please inquire about a semi-private or private tutorial. </br>';
-								$translated_text .= '<a href="http://www.penobscot.us/tutorials/" class=" button primary">Learn More</a>';
+								$translated_text = 'There are no '.single_term_title("", false).' scheduled. ';
+								$translated_text .= 'Please inquire about a semi-private or private tutorial. ';
+								//$translated_text .= '</br><a href="http://www.penobscot.us/tutorials/" class=" button primary">Learn More</a>';
 
 							} else {
 								$translated_text = 'There are currently no classes scheduled. Classes will be posted when the next session begins.';
