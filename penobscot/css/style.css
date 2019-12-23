@@ -5,7 +5,6 @@ Author: Reach Maine
 Template: flatsome
 Version: 2.5.6
 */
-@import url("../flatsome/css/foundation.css");
 /* Colors ---------------------------------------------- */
 /* Typography ------------------------------------------ */
 p {
@@ -72,6 +71,11 @@ ul, ol, dl {
     content: ""; } }
 .product-small p.name {
   font-size: x-large; }
+
+.product.product-small .product-small.box {
+  border: 1px solid #eeeeee; }
+  .product.product-small .product-small.box .box-image .image-none {
+    display: none; }
 
 .product .nyp {
   margin-bottom: 0px; }
@@ -162,15 +166,15 @@ aside.widget_shopping_cart .widget_shopping_cart_content dl.variation dd.variati
   background-color: #5C7253 !important; }
   #masthead #logo a {
     color: white; }
-  #masthead #logo #tag-line {
-    color: #EDD7AE; }
-  #masthead .right-links #menu-top-bar-menu li, #masthead .right-links #menu-top-bar-menu li a {
-    color: white;
-    font-size: 110%; }
-  #masthead .right-links #menu-top-bar-menu .nav-dropdown li a {
-    text-transform: none;
-    font-size: .9em;
-    text-align: center; }
+  #masthead #logo .logo-tagline {
+    color: #EDD7AE;
+    text-transform: uppercase;
+    margin: 0px !important;
+    font-style: normal !important; }
+  #masthead .flex-right {
+    align-self: flex-end; }
+    #masthead .flex-right .header-nav li, #masthead .flex-right .header-nav li a {
+      color: white; }
   #masthead .mobile-menu .icon-menu {
     color: #EDD7AE; }
 

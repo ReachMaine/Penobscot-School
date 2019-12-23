@@ -9,6 +9,16 @@
 	}
 }
 
+	.product.product-small { // archives, related, loop
+		.product-small.box {
+			border: 1px solid #eeeeee;
+			.box-image .image-none {
+				display: none;
+			}
+		}
+	}
+
+
 // single product page
 .product { // tighten up product add ons ()
 	.nyp {

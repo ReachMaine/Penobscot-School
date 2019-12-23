@@ -10,6 +10,11 @@
 		// remove "showing all 10 results" & default sorting
 		remove_action( 'ux_woocommerce_navigate_products', 'woocommerce_result_count', 20 );
  		remove_action( 'ux_woocommerce_navigate_products', 'woocommerce_catalog_ordering', 30 );
+		remove_action( 'flatsome_category_title_alt', 'woocommerce_result_count', 20 );
+    remove_action( 'flatsome_category_title_alt', 'woocommerce_catalog_ordering', 30 );
+		// not using product images....
+		remove_action('woocommerce_before_single_product_summary', 'woocommerce_show_product_images', 20);
+
 
 	}
 
@@ -56,8 +61,8 @@
 	}
 
 	// for add to cart text in loops
-	add_filter ('addons_add_to_cart_text', 'custom_woocommerce_loop_add_to_cart_text');
-	add_filter( 'woocommerce_product_add_to_cart_text' , 'custom_woocommerce_loop_add_to_cart_text' );  // product loops
+	//add_filter ('addons_add_to_cart_text', 'custom_woocommerce_loop_add_to_cart_text');
+	//add_filter( 'woocommerce_product_add_to_cart_text' , 'custom_woocommerce_loop_add_to_cart_text' );  // product loops
 	function custom_woocommerce_loop_add_to_cart_text() {
 			global $product;
 
@@ -72,9 +77,9 @@
 				case 'grouped':
 					$retstring  ='View products';
 					break;
-				case 'simple':
+				/* case 'simple':
 					$retstring  ='Learn More'; // was add to cart
-					break;
+					break; */
 				case 'variable':
 					$retstring  ='Learn More'; // was select options
 					break;
@@ -96,7 +101,7 @@
 	add_filter( 'woocommerce_return_to_shop_redirect', 'wc_empty_cart_redirect_url' );
 
 	// Remove prices from loop
-	remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10 );
+	//remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10 );
 
 	// add custom field/desc in product loop
 	add_action('woocommerce_after_shop_loop_item_title', 'penob_custom_info', 10);
@@ -119,8 +124,8 @@
 	}
 
 	// add badge(s) to shop loop.
-	add_action('woocommerce_after_shop_loop_item_title',  'reach_show_badge_loop' , 10 );
-	add_action( 'woocommerce_single_product_summary', 'reach_show_badge_single', 7 );
+	//add_action('woocommerce_after_shop_loop_item_title',  'reach_show_badge_loop' , 10 );
+	//add_action( 'woocommerce_single_product_summary', 'reach_show_badge_single', 7 );
 	function reach_show_badge_loop() {
 		$html_out = "";
 		$html_out .= '<div class="reach-badge-loop-container">';

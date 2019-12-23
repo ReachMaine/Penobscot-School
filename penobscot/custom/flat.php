@@ -1,5 +1,5 @@
-<?php 
-// override of plugable flatsome functions 
+<?php
+// override of plugable flatsome functions
 function year_shortcode() {
     $year = date('Y');
     return $year;
@@ -12,7 +12,7 @@ if ( ! function_exists( 'flatsome_posted_on' ) ) {
     /**
      * Prints HTML with meta information for the current post-date/time and author.
      * mods:
-     *     12Nov15 zig - dont show author in meta 
+     *     12Nov15 zig - dont show author in meta
      */
     function flatsome_posted_on() {
         $time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
@@ -40,4 +40,4 @@ if ( ! function_exists( 'flatsome_posted_on' ) ) {
         */
         echo '<span class="posted-on">' . $posted_on . '</span>';
     }
-} // end if defined flatsome_posted_on 
+} // end if defined flatsome_posted_on

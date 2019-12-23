@@ -6,7 +6,7 @@ Template: flatsome
 Version: 2.5.6
 */
 
-@import url("../flatsome/css/foundation.css");
+//@import url("../flatsome/css/foundation.css");
 @import "partials/settings";
 @import "partials/print";
 @import "partials/woo";
@@ -21,22 +21,19 @@ Version: 2.5.6
 		a {
 			color: $logo-font-color;
 		}
-		#tag-line {
+		.logo-tagline {
 			color: $tagline-color;
+			text-transform: uppercase;
+			margin: 0px!important;
+			font-style: normal!important;
 		}
 	}
-	.right-links #menu-top-bar-menu {
-		li, li a {
-			color: white;
-			font-size: 110%;
-		}
-		.nav-dropdown {
-			li {
-				a {
-					text-transform: none;
-					font-size: .9em;
-					text-align: center;
-				}
+	.flex-right {
+		align-self: flex-end; // push downto bottom of container.
+		.header-nav {
+				li, li a {
+				color: white;
+				//font-size: 110%;
 			}
 		}
 	}
