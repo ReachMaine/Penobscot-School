@@ -8,6 +8,8 @@ compass_app_log.txt
 *.php-*
 *.css-*
 
+penobscot/woocommerceX/*
+
 # Folder config file
 Desktop.ini
 
