@@ -1,13 +1,8 @@
 <?php
 	require_once(get_stylesheet_directory().'/custom/language.php');
 	require_once(get_stylesheet_directory().'/custom/woocommerce.php');
+	require_once(get_stylesheet_directory().'/custom/flat.php');
 
-	// add shortcode for current year, used in copyright footer.
-	function year_shortcode() {
-	    $year = date('Y');
-	    return $year;
-	}
-	add_shortcode('current_year', 'year_shortcode');
 
 	add_action('after_setup_theme', 'ea_setup');
 	/**  ea_setup
@@ -16,20 +11,22 @@
 	*/
 	function ea_setup() {
 	 /* do stuff ehre. */
-	 reach_woo_setup(); // woocommerce stuff that overrides flatsome.
+	  reach_woo_setup(); // woocommerce stuff that overrides flatsome.
 
 		remove_action( 'flatsome_after_header', 'flatsome_html_after_header', 1 );
-		add_action( 'reach_after_header', 'flatsome_html_after_header', 1 );
-		function reach_after_header() {
-			if ( get_theme_mod( 'html_after_header' ) && is_front_page() ) {
-				// AFTER HEADER HTML BLOCK.
-				echo '<div class="header-block block-html-after-header z-1 zzz" style="position:relative;top:-1px;">';
-				echo do_shortcode( get_theme_mod( 'html_after_header' ) );
-				echo '</div>';
-			}
-		}
+		add_action( 'flatsome_after_header', 'reach_after_header', 1 );
+
 	}
 
+	function reach_after_header() {
+	if ( get_theme_mod( 'html_after_header' )  && is_front_page()  ) {
+			// AFTER HEADER HTML BLOCK.
+			echo '<div class="header-block block-html-after-header z-1" style="position:relative;top:-1px;">';
+			echo do_shortcode( get_theme_mod( 'html_after_header' ) );
+			echo '</div>';
+		}
+	}
+	
 	add_image_size('reach_featured_image', 750, 350, false);
 	function ea_custom_sizes( $sizes ) {
 	    return array_merge( $sizes, array(

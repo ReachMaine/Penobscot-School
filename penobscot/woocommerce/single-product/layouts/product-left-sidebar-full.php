@@ -19,7 +19,7 @@
 
 	<div class="col large-9">
 		<div class="row">
-			<div class="large-<?php echo flatsome_option('product_image_width'); ?> col zzz">
+			<div class="large-<?php echo '0';/*zig flatsome_option('product_image_width'); */?> col ">
 				<?php
 				/**
 				 * woocommerce_before_single_product_summary hook
