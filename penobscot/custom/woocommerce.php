@@ -160,3 +160,23 @@
  		}
 		return $price;
 	}
+
+	/**
+	 * @snippet       Remove Product Tabs & Echo Long Description
+	 * @how-to        Get CustomizeWoo.com FREE
+	 * @author        Rodolfo Melogli
+	 * @testedwith    WooCommerce 3.8
+	 * @donate $9     https://businessbloomer.com/bloomer-armada/
+	 */
+
+	remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
+
+	add_action( 'woocommerce_after_single_product_summary', 'bbloomer_wc_output_long_description', 10 );
+
+	function bbloomer_wc_output_long_description() {
+	?>
+	   <div class="woocommerce-tabs">
+	   <?php the_content(); ?>
+	   </div>
+	<?php
+	}
