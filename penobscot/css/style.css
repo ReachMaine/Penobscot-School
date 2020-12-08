@@ -32,7 +32,7 @@ ul, ol, dl {
   list-style: outside; }
 
 .widget_nav_menu ul li a {
-  color: #627f9a;
+  color: #281572;
   font-size: larger; }
 
 .reach-logo:before {
@@ -276,18 +276,20 @@ aside.bottom_close_menu.widget_nav_menu {
   aside.bottom_close_menu.widget_nav_menu ul.menu {
     padding-bottom: 0px; }
 
-.easy_testimonial p {
-  margin-bottom: 0px; }
-.easy_testimonial .testimonial_body {
-  font-size: 95%; }
-.easy_testimonial p.testimonial_author cite:before {
-  content: ""; }
-.easy_testimonial p.testimonial_author cite .testimonial-client,
-.easy_testimonial p.testimonial_author cite .testimonial-position,
-.easy_testimonial p.testimonial_author cite .testimonial-other {
-  font-size: medium;
-  padding-left: 10px;
-  color: #5C7253; }
+blockquote.easy_testimonial {
+  background-color: rgba(61, 79, 165, 0.15) !important; }
+  blockquote.easy_testimonial p {
+    margin-bottom: 0px; }
+  blockquote.easy_testimonial .testimonial_body {
+    font-size: 95%; }
+  blockquote.easy_testimonial p.testimonial_author cite:before {
+    content: ""; }
+  blockquote.easy_testimonial p.testimonial_author cite .testimonial-client,
+  blockquote.easy_testimonial p.testimonial_author cite .testimonial-position,
+  blockquote.easy_testimonial p.testimonial_author cite .testimonial-other {
+    font-size: medium;
+    padding-left: 10px;
+    color: #5C7253; }
 
 ul.ecs-event-list {
   list-style: none;

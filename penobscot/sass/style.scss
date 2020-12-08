@@ -197,7 +197,8 @@ aside.bottom_close_menu.widget_nav_menu {
 
 
 // testimonitals
-.easy_testimonial { //blockquote
+blockquote.easy_testimonial { //blockquote
+	background-color: $pale-purpleblue!important;
 	p {
 		margin-bottom: 0px;
 	}
