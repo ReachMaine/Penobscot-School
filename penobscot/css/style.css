@@ -63,6 +63,12 @@ ul, ol, dl {
 .penob-border-white {
   border: 4px solid white; }
 
+.penob-border-thin-white {
+  border: 1px solid white; }
+
+.penob-border-thin-gold {
+  border: 1px solid #EDD7AE; }
+
 /* Welcome to Compass. Use this file to define print styles.
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
