@@ -45,18 +45,13 @@
 
     /* change the add to cart text.... */
 	// for single products
- add_filter( 'woocommerce_product_single_add_to_cart_text' , 'custom_woocommerce_product_add_to_cart_text' ); // product
-	function custom_woocommerce_product_add_to_cart_text() {
-		global $product;
+ add_filter( 'woocommerce_product_single_add_to_cart_text' , 'custom_woocommerce_product_add_to_cart_text', 10, 2 ); // product
+	function custom_woocommerce_product_add_to_cart_text($text, $in_product) {
 
-		$product_type = $product->product_type;
-		switch ( $product_type ) {
-			case 'variable':
+		if ( !(has_term( array('charitable-contribution', 'fundraising-dinner', 'fundraising'), 'product_cat', $in_product->ID )) ) {  // dont change text if fundraising
 				return __( 'Register','woocommerce' ); // was 'add to cart'
-				break;
-			default:
-				return __( 'Add to Cart','woocommerce' ); // was 'add to cart'
-				break;
+		} else {
+				return $text;
 		}
 	}
 
