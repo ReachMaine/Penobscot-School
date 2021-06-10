@@ -156,6 +156,17 @@
 		return $price;
 	}
 
+// price_suffix custom post meta
+add_filter( 'woocommerce_get_price_suffix', 'bbloomer_add_price_suffix', 99, 4 );
+function bbloomer_add_price_suffix( $html, $product, $price, $qty ){
+		$product_price_suffix = get_post_meta($product->id, 'price_suffix', true);
+	  if ($product_price_suffix) {
+			  $html .= ' '.$product_price_suffix;
+		}
+      return $html;
+}
+
+
 	/**
 	 * @snippet       Remove Product Tabs & Echo Long Description
 	 * @how-to        Get CustomizeWoo.com FREE
