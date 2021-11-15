@@ -167,32 +167,6 @@ aside.widget_shopping_cart .widget_shopping_cart_content dl.variation dd.variati
 .screen-reader-text {
   display: none; }
 
-/* gravity forms styling */
-.gform_wrapper .gform_fields .gfield gfield_label {
-  margin-bottom: 0px; }
-.gform_wrapper .gform_fields .gfield .gfield-choice-input {
-  margin-bottom: 0px; }
-.gform_wrapper .gform_footer {
-  display: flex;
-  justify-content: flex-end; }
-  .gform_wrapper .gform_footer input[type=submit] {
-    		/*color: $form-button-color;
-        padding: 5px 16px;
-    		border: 2px solid $form-button-border;
-        font-size: 20px!important;
-        text-align: center;
-        cursor: pointer;
-    	  background-color: $form-button-bkg;
-    		font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
-    		text-transform: uppercase;
-    	  //line-height: 1.7em; */ }
-  .gform_wrapper .gform_footer input[type=submit]:hover {
-    color: #edaf3d; }
-
-.gform_wrapper.pls-gform-border_wrapper {
-  border: 1px solid #281572;
-  padding: 14px; }
-
 /* =Theme customization starts here */
 #masthead {
   background-color: #281572 !important; }

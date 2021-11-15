@@ -1,0 +1,48 @@
+/* gravity forms styling */
+
+.gform_wrapper {
+	.gform_fields  { // ul
+		.gfield {
+			 gfield_label {
+				 margin-bottom: 0px;
+			 }
+				input,
+				textarea {
+					//background-color: #f8f6f4;
+					//font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
+					//border: 0px;
+
+				}
+				.gfield-choice-input {
+					margin-bottom: 0px; // clear flatsome styling of inputs
+				}
+			}
+		} // fields
+
+	.gform_footer {
+		display: flex;
+		justify-content: flex-end; // put button on right
+
+		input[type=submit] { //  Make submit look like buttons on the site.
+				/*color: $form-button-color;
+		    padding: 5px 16px;
+				border: 2px solid $form-button-border;
+		    font-size: 20px!important;
+		    text-align: center;
+		    cursor: pointer;
+			  background-color: $form-button-bkg;
+				font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
+				text-transform: uppercase;
+			  //line-height: 1.7em; */
+			}
+			input[type=submit]:hover {
+				//background-color: $form-button-hover-bkg;
+				color: $form-button-hover-color;
+			}
+	} // gform footer
+} // gform wrapper
+.gform_wrapper.pls-gform-border_wrapper {
+	border: 1px solid $penob-royal;
+	padding: 14px;
+
+}
