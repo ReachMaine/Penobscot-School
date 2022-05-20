@@ -30,6 +30,14 @@
 			max-width: 200px;
 		}
 	}
+	.wc-pao-addons-container {
+		.wc-pao-addon-container.wc-pao-addon.wc-pao-addon-student-discounts{
+			p.wc-pao-addon-wrap:first-of-type {
+				display: none;
+			}
+		}
+
+	}
 	div.product-addon {
 		margin: 0px;
 		border: 0px;
