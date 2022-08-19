@@ -11,7 +11,7 @@
 		remove_action( 'ux_woocommerce_navigate_products', 'woocommerce_result_count', 20 );
  		remove_action( 'ux_woocommerce_navigate_products', 'woocommerce_catalog_ordering', 30 );
 		remove_action( 'flatsome_category_title_alt', 'woocommerce_result_count', 20 );
-    remove_action( 'flatsome_category_title_alt', 'woocommerce_catalog_ordering', 30 );
+    	remove_action( 'flatsome_category_title_alt', 'woocommerce_catalog_ordering', 30 );
 		// not using product images....
 		remove_action('woocommerce_before_single_product_summary', 'woocommerce_show_product_images', 20);
 
@@ -44,8 +44,10 @@
 
 
     /* change the add to cart text.... */
-	// for single products
+	// for single products & loop
+ add_filter( 'woocommerce_product_add_to_cart_text' , 'custom_woocommerce_product_add_to_cart_text', 9999, 2 ); // product
  add_filter( 'woocommerce_product_single_add_to_cart_text' , 'custom_woocommerce_product_add_to_cart_text', 10, 2 ); // product
+
 	function custom_woocommerce_product_add_to_cart_text($text, $in_product) {
 
 		if ( !(has_term( array('charitable-contribution', 'fundraising-dinner', 'fundraising'), 'product_cat', $in_product->ID )) ) {  // dont change text if fundraising
