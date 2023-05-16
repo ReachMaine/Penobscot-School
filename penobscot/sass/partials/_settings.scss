@@ -91,3 +91,16 @@ ul, ol, dl {
 .penob-border-thin-gold {
 	border: 1px solid #EDD7AE;
 }
+
+.penob-accord-title {
+	.accordion-item {
+		.accordion-title {
+			background-color: #ededed;
+		}
+		.accordion-inner {
+			border-left: 1px solid #ededed;
+			border-right: 1px solid #ededed;
+			border-bottom: 1px solid #ededed;
+		}
+	}
+}
