@@ -93,7 +93,7 @@
 	 * @return string
 	 */
 	function wc_empty_cart_redirect_url() {
-		return 'http://www.penobscot.us/';
+		return get_permalink( get_page_by_path( 'language-classes' ) );
 	}
 	add_filter( 'woocommerce_return_to_shop_redirect', 'wc_empty_cart_redirect_url' );
 
@@ -188,3 +188,17 @@ function bbloomer_add_price_suffix( $html, $product, $price, $qty ){
 	   </div>
 	<?php
 	}
+	/**
+ * @snippet       Continue Shopping Link - WooCommerce Cart
+ * @how-to        Get CustomizeWoo.com FREE
+ * @author        Rodolfo Melogli
+ * @compatible    WooCommerce 3.6.2
+ * @donate $9     https://businessbloomer.com/bloomer-armada/
+ */
+ 
+ add_filter( 'woocommerce_continue_shopping_redirect', 'bbloomer_change_continue_shopping' );
+ 
+ function bbloomer_change_continue_shopping() {
+	return get_permalink( get_page_by_path( 'language-classes' ) );
+	
+}
