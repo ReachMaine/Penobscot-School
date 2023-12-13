@@ -50,7 +50,7 @@
 
 	function custom_woocommerce_product_add_to_cart_text($text, $in_product) {
 
-		if ( !(has_term( array('charitable-contribution', 'fundraising-dinner', 'fundraising'), 'product_cat', $in_product->ID )) ) {  // dont change text if fundraising
+		if ( !(has_term( array('gift-cards', 'charitable-contribution', 'fundraising-dinner', 'fundraising'), 'product_cat', $in_product->ID )) ) {  // dont change text if fundraising
 				return __( 'Register','woocommerce' ); // was 'add to cart'
 		} else {
 				return $text;
