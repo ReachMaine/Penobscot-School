@@ -14,6 +14,7 @@
 							if (is_product_category()) {
 								$translated_text = 'There are no '.single_term_title("", false).' scheduled. ';
 								$translated_text .= 'Please inquire about a semi-private or private tutorial. ';
+								$translated_text = "";
 								//$translated_text .= '</br><a href="http://www.penobscot.us/tutorials/" class=" button primary">Learn More</a>';
 
 							} else {
