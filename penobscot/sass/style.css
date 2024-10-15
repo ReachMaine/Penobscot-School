@@ -1,0 +1,535 @@
+/*
+Theme Name: Penobscott
+Description: Theme for the Penobscot Language School
+Author: Reach Maine
+Template: flatsome
+Version: 2.5.6
+*/
+/* Colors ---------------------------------------------- */
+/* Typography ------------------------------------------ */
+p {
+  font-size: 110%;
+}
+
+body,
+blockquote,
+blockquote p {
+  color: #333;
+}
+
+.penob_alt_color, .penob_alt_color a {
+  color: #EDD7AE !important;
+}
+
+.penob_font_thin {
+  font-weight: lighter;
+}
+
+.penob_green {
+  color: #5C7253;
+}
+
+.penob_h4_smaller {
+  font-size: 20px;
+}
+
+/* standard stuff */
+ul, ol, dl {
+  list-style: outside;
+}
+
+.widget_nav_menu ul li a {
+  color: #281572;
+  font-size: larger;
+}
+
+.reach-logo:before {
+  content: url("images/favicon.png");
+  padding-right: 3px;
+}
+
+.penob-box {
+  text-align: center;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.penob-box-green,
+.penob-box-green a {
+  color: white;
+  background-color: #5c7253;
+}
+
+.penob-box-blue,
+.penob-box-blue a {
+  color: white;
+  background-color: #627f9a;
+}
+
+.penob-eq-col-row {
+  display: flex;
+}
+
+.penob-eq-col {
+  flex: 1;
+}
+
+.penob-border-white {
+  border: 4px solid white;
+}
+
+.penob-border-thin-white {
+  border: 1px solid white;
+}
+
+.penob-border-thin-gold {
+  border: 1px solid #EDD7AE;
+}
+
+.penob-accord-title .accordion-item .accordion-title {
+  background-color: #ededed;
+}
+.penob-accord-title .accordion-item .accordion-inner {
+  border-left: 1px solid #ededed;
+  border-right: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+@media print {
+  body #masthead a[href]:after, body #site-navigation a[href]:after, body #menu-top-nav-and-footer-nav a[href]:after, body #menu-footer a[href]:after {
+    content: "";
+  }
+}
+.product-small p.name {
+  font-size: x-large;
+}
+.product.product-small .product-small.box {
+  border: 1px solid #eeeeee;
+}
+.product.product-small .product-small.box .box-image .image-none {
+  display: none;
+}
+
+.product .nyp {
+  margin-bottom: 0px;
+}
+.product .nyp label {
+  display: inline;
+}
+.product .nyp input#nyp {
+  max-width: 200px;
+}
+.product .wc-pao-addons-container .wc-pao-addon-container.wc-pao-addon.wc-pao-addon-student-discounts p.wc-pao-addon-wrap:first-of-type {
+  display: none;
+}
+.product div.product-addon {
+  margin: 0px;
+  border: 0px;
+  padding-top: 0px;
+}
+.product div.product-addon p input.input-text {
+  max-width: 450px;
+}
+.product div.product-addon p.form-row {
+  margin-bottom: 0px;
+}
+.product div.product-addon.product-addon-student-name {
+  clear: both;
+  margin-top: 10px;
+  border-top: 1px solid #e4e4e4;
+  padding-top: 20px;
+}
+.product .product-addon-date-of-birth, .product .product-addon-invoice {
+  max-width: 150px;
+}
+.product .product-addon-new-registration-or-invoiced-registration, .product .product-addon-invoiced-registrations {
+  width: 50%;
+  float: left;
+}
+.product .product-addon-new-registration-or-invoiced-registration .input-text.addon, .product .product-addon-invoiced-registrations .input-text.addon {
+  max-width: 150px;
+}
+
+.product-info .price.large {
+  font-size: 120%;
+}
+.product-info .variations {
+  max-width: 400px;
+}
+.product-info .product-addon-registration-policy input {
+  display: none;
+}
+.product-info .product-addon-location .addon-name {
+  max-width: 240px;
+  float: left;
+  line-height: 40px;
+}
+.product-info .product-addon-location p {
+  float: left;
+  padding-left: 40px;
+}
+.product-info .product-addon-location p select {
+  padding-right: 28px;
+}
+
+/* small shopping cart on sidebar */
+aside.widget_shopping_cart .widget_shopping_cart_content li.mini_cart_item {
+  padding-left: 0px;
+}
+aside.widget_shopping_cart .widget_shopping_cart_content li.mini_cart_item img {
+  display: none;
+}
+
+/*  shopping cart, checkout  & mini-cart widget */
+.woocommerce .cart-wrapper .cart_item dl.variation dt,
+.woocommerce .shop_table .cart_item dl.variation dt,
+aside.widget_shopping_cart .widget_shopping_cart_content dl.variation dt {
+  display: none;
+}
+.woocommerce .cart-wrapper .cart_item dl.variation dd,
+.woocommerce .shop_table .cart_item dl.variation dd,
+aside.widget_shopping_cart .widget_shopping_cart_content dl.variation dd {
+  display: none;
+}
+.woocommerce .cart-wrapper .cart_item dl.variation dd.variation-Semester,
+.woocommerce .cart-wrapper .cart_item dl.variation dd.variation-Session,
+.woocommerce .cart-wrapper .cart_item dl.variation dd.variation-StudentName,
+.woocommerce .shop_table .cart_item dl.variation dd.variation-Semester,
+.woocommerce .shop_table .cart_item dl.variation dd.variation-Session,
+.woocommerce .shop_table .cart_item dl.variation dd.variation-StudentName,
+aside.widget_shopping_cart .widget_shopping_cart_content dl.variation dd.variation-Semester,
+aside.widget_shopping_cart .widget_shopping_cart_content dl.variation dd.variation-Session,
+aside.widget_shopping_cart .widget_shopping_cart_content dl.variation dd.variation-StudentName {
+  display: inline-block;
+}
+
+.reach-badge-loop-container .yith-wcbm-badge {
+  position: relative !important;
+  margin: auto;
+}
+
+.reach-badge-loop-container .yith-wcbm-badge,
+.reach-badge-container .yith-wcbm-badge {
+  font-weight: bold;
+  font-size: x-large;
+  line-height: 30px;
+  height: 30px;
+  width: 120px;
+}
+
+.screen-reader-text {
+  display: none;
+}
+
+/* gravity forms styling */
+.gform_wrapper .gform_fields .gfield gfield_label {
+  margin-bottom: 0px;
+}
+.gform_wrapper .gform_fields .gfield .gfield-choice-input {
+  margin-bottom: 0px;
+}
+.gform_wrapper .gform_footer {
+  display: flex;
+  justify-content: flex-end;
+}
+.gform_wrapper .gform_footer input[type=submit] {
+  /*color: $form-button-color;
+    padding: 5px 16px;
+  border: 2px solid $form-button-border;
+    font-size: 20px!important;
+    text-align: center;
+    cursor: pointer;
+   background-color: $form-button-bkg;
+  font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
+  text-transform: uppercase;
+   //line-height: 1.7em; */
+}
+.gform_wrapper .gform_footer input[type=submit]:hover {
+  color: #edaf3d;
+}
+
+.gform_wrapper.pls-gform-border_wrapper {
+  border: 1px solid #281572;
+  padding: 14px;
+}
+
+/* =Theme customization starts here */
+#masthead {
+  background-color: #281572 !important;
+}
+#masthead #logo a {
+  color: white;
+}
+#masthead #logo .logo-tagline {
+  color: #EDD7AE;
+  text-transform: uppercase;
+  margin: 0px !important;
+  font-style: normal !important;
+}
+#masthead .flex-right {
+  align-self: flex-end;
+}
+#masthead .flex-right .header-nav li, #masthead .flex-right .header-nav li a {
+  color: white;
+}
+#masthead .mobile-menu .icon-menu {
+  color: #EDD7AE;
+}
+
+#site-navigation li, #site-navigation li a {
+  font-size: 100%;
+  opacity: 0.8;
+}
+
+ul.header-nav a.nav-top-link .block-html-after-header {
+  border-bottom: 10px solid #EDD7AE;
+}
+ul.header-nav a.nav-top-link .block-html-after-header .ux-slider {
+  margin-bottom: 0px;
+}
+
+.block-html-after-header .ux-slider {
+  margin-bottom: 20px;
+}
+
+.product-page,
+.page-wrapper,
+.category-page {
+  padding-top: 10px;
+}
+
+.page-wrapper #secondary {
+  padding-top: 5px;
+}
+.page-wrapper .entry-content {
+  margin-top: 0px;
+}
+.page-wrapper .entry-content .tribe-events-before-html h1 {
+  margin-top: 0px;
+  text-transform: uppercase;
+  font-size: 1.625em;
+}
+
+.tabbed-content.shortcode_tabgroup ul.tabs {
+  border-top: 0px;
+  border-bottom: 2px solid #DADADA;
+}
+.tabbed-content.shortcode_tabgroup ul.tabs li {
+  border: 1px solid #DADADA;
+}
+.tabbed-content.shortcode_tabgroup ul.tabs li a {
+  padding-left: 10px;
+  color: #868686;
+  width: 100%;
+}
+.tabbed-content.shortcode_tabgroup ul.tabs li.active {
+  border-top: 4px solid #333;
+  border-left: 1px solid #808080;
+  border-right: 1px solid #808080;
+  margin-top: 1px;
+}
+.tabbed-content.shortcode_tabgroup ul.tabs li.active a {
+  color: #333;
+  border: 0px;
+}
+
+.penobscot_banner_bottom .ux_banner .inner.bottom {
+  bottom: 0 !important;
+}
+.penobscot_banner_bottom .ux_banner .inner.bottom .inner-wrap {
+  padding-left: 5px !important;
+  padding-right: 0px !important;
+}
+
+h4.penob_h4_smaller {
+  font-size: 20px;
+}
+
+.language-classes-grid div.columns {
+  margin-bottom: 20px;
+}
+.language-classes-grid div.columns .ux_banner h4 {
+  font-size: 180% !important;
+}
+
+.from_the_blog_comments {
+  display: none;
+  visibility: hidden;
+}
+
+aside.widget.widget_recent_entries li {
+  padding-bottom: 15px;
+}
+
+/*** start single post ***/
+.single-post article.post footer.entry-meta {
+  clear: both;
+  border-top: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.widget-title {
+  color: #5C7253;
+}
+
+.widget_woothemes_our_team .team-member {
+  clear: both;
+  padding-top: 20px;
+  min-height: 245px;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+}
+.widget_woothemes_our_team .team-member figure {
+  width: 225px !important;
+  padding-right: 10px;
+  float: left;
+}
+.widget_woothemes_our_team .team-member figure img {
+  border-radius: 0px;
+  width: 100%;
+}
+.widget_woothemes_our_team .team-member:after {
+  clear: both;
+}
+
+aside.bottom_close_menu.widget_nav_menu {
+  margin-bottom: 0px;
+}
+aside.bottom_close_menu.widget_nav_menu ul.menu {
+  padding-bottom: 0px;
+}
+
+blockquote.easy_testimonial {
+  background-color: rgba(61, 79, 165, 0.15) !important;
+}
+blockquote.easy_testimonial p {
+  margin-bottom: 0px;
+}
+blockquote.easy_testimonial .testimonial_body {
+  font-size: 95%;
+}
+blockquote.easy_testimonial p.testimonial_author cite:before {
+  content: "";
+}
+blockquote.easy_testimonial p.testimonial_author cite .testimonial-client,
+blockquote.easy_testimonial p.testimonial_author cite .testimonial-position,
+blockquote.easy_testimonial p.testimonial_author cite .testimonial-other {
+  font-size: medium;
+  padding-left: 10px;
+  color: #5C7253;
+}
+
+ul.ecs-event-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+ul.ecs-event-list li.ecs-event {
+  border: 1px solid #EEE;
+  padding: 1%;
+  margin: 1%;
+  float: left;
+  max-width: 48%;
+}
+
+.event-cat-shortcode .duration {
+  display: block;
+}
+
+#submit.donate-btn {
+  background-color: red;
+  width: 147px;
+  height: 47px;
+}
+
+/* ===================================================== */
+/* Media Queries --------------------------------------- */
+/* ===================================================== */
+/* Foundation Block Grids for above small breakpoint */
+/***************------------- 15. MOBILE -------------*****************/
+@media only screen and (max-width: 48em) {
+  .hide-tablet {
+    display: none;
+  }
+  .tablet-wide {
+    width: 100%;
+  }
+  #masthead {
+    height: inherit !important;
+    padding-top: 4px;
+    padding-bottom: 6px;
+  }
+  #masthead .header-container {
+    display: block;
+  }
+  #masthead #right-logo-phone {
+    display: block;
+  }
+  #masthead #right-logo-phone .eai-right-image {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: none;
+  }
+  aside.bottom_close_menu {
+    display: none;
+  }
+  .language-classes-grid div.columns {
+    width: 50% !important;
+  }
+  .language-classes-grid div.columns div.ux_banner {
+    height: 140px !important;
+  }
+  .type-page h1.entry-title,
+  .type-post h1.entry-title,
+  .category-page h1.entry-title,
+  .product-page h1.entry-title,
+  .search-results .text-center h1.entry-title {
+    font-size: x-large;
+    text-align: center;
+  }
+  .category-filtering,
+  .category-filtering #shop-sidebar {
+    display: none !important;
+    height: 0px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+  }
+  .penob-eq-col-row {
+    display: block;
+  }
+}
+/* Medium Displays: 768px - 1279px */
+/* Styles for screens that are atleast 768px; */
+@media only screen and (min-width: 48em) {
+  .single-post article.post .entry-image {
+    width: 50%;
+    float: left;
+    padding-right: 10px;
+  }
+  .single-tribe_events .tribe-events-event-image {
+    max-width: 50%;
+    float: left;
+    padding-right: 20px;
+  }
+}
+/* Large Displays: 1280px - 1440px */
+/* X-Large Displays: 1400px and up */
+/* breakpoints for ux_banners */
+@media only screen and (max-width: 440px) {
+  #masthead {
+    height: 120px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .hide-phone {
+    display: none;
+  }
+  .phone-wide {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
