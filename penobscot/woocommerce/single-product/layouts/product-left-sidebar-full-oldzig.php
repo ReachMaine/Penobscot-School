@@ -1,14 +1,3 @@
-<?php
-/**
- * Product with left full sidebar.
- *
- * @package          Flatsome/WooCommerce/Templates
- * @flatsome-version 3.19.9
- * mods:
- * 11Apr25 - zig - no image.  set size to 0
- */
-
-?>
 <div class="product-main">
  <div class="row content-row row-divided row-large">
 
@@ -26,12 +15,11 @@
 				dynamic_sidebar('shop-sidebar');
 			}
 		?>
-	</div>
+	</div><!-- col large-3 -->
 
 	<div class="col large-9">
 		<div class="row">
-			<div class="product-gallery col large-0<?php /* zig xoutecho get_theme_mod( 'product_image_width', '6' ); */ ?>">
-				<?php flatsome_sticky_column_open( 'product_sticky_gallery' ); ?>
+			<div class="large-<?php echo '0';/*zig flatsome_option('product_image_width'); */?> col ">
 				<?php
 				/**
 				 * woocommerce_before_single_product_summary hook
@@ -40,8 +28,8 @@
 				 * @hooked woocommerce_show_product_images - 20
 				 */
 				do_action( 'woocommerce_before_single_product_summary' );
-				?>
-				<?php flatsome_sticky_column_close( 'product_sticky_gallery' ); ?>
+			?>
+
 			</div>
 
 
@@ -61,10 +49,10 @@
 					do_action( 'woocommerce_single_product_summary' );
 				?>
 
-			</div>
+			</div><!-- .summary -->
 
 
-			</div>
+			</div><!-- .row -->
 			<div class="product-footer">
 			<?php
 					/**
@@ -78,7 +66,7 @@
 				?>
 			</div>
 
-    </div>
+    </div><!-- col large-9 -->
 
-</div>
-</div>
+</div><!-- .row -->
+</div><!-- .product-main -->

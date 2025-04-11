@@ -4,8 +4,6 @@
  *
  * @package          Flatsome/WooCommerce/Templates
  * @flatsome-version 3.19.9
- * mods:
- * 11Apr25 - zig - no image.  set size to 0
  */
 
 ?>
@@ -30,7 +28,7 @@
 
 	<div class="col large-9">
 		<div class="row">
-			<div class="product-gallery col large-0<?php /* zig xoutecho get_theme_mod( 'product_image_width', '6' ); */ ?>">
+			<div class="product-gallery col large-<?php echo get_theme_mod( 'product_image_width', '6' ); ?>">
 				<?php flatsome_sticky_column_open( 'product_sticky_gallery' ); ?>
 				<?php
 				/**
