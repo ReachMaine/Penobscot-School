@@ -89,7 +89,7 @@ ul, ol, dl {
 	border: 1px solid white;
 }
 .penob-border-thin-gold {
-	border: 1px solid #EDD7AE;
+	border: 1px solid #EDD7AE!important;
 }
 
 .penob-accord-title {
@@ -104,3 +104,14 @@ ul, ol, dl {
 		}
 	}
 }
+.tribe-events-content {
+
+      // button in event content 
+      a.button {
+        border-bottom-width: 0px!important;
+      }
+      a.button:hover {
+        color: white!important;
+      }
+
+    }

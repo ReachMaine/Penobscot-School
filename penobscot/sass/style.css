@@ -83,7 +83,7 @@ ul, ol, dl {
 }
 
 .penob-border-thin-gold {
-  border: 1px solid #EDD7AE;
+  border: 1px solid #EDD7AE !important;
 }
 
 .penob-accord-title .accordion-item .accordion-title {
@@ -93,6 +93,13 @@ ul, ol, dl {
   border-left: 1px solid #ededed;
   border-right: 1px solid #ededed;
   border-bottom: 1px solid #ededed;
+}
+
+.tribe-events-content a.button {
+  border-bottom-width: 0px !important;
+}
+.tribe-events-content a.button:hover {
+  color: white !important;
 }
 
 /* Welcome to Compass. Use this file to define print styles.
